@@ -1,0 +1,12 @@
+import numpy as np
+
+# Создаем массив данных (пример данных)
+data = np.array([15, 20, 22, 24, 25, 28, 30, 35, 40, 45, 50])
+
+# Вычисляем перцентили с использованием numpy
+percentiles = np.percentile(data, [25, 50, 75])
+
+# Выводим результат
+print("25-й перцентиль:", percentiles[0])
+print("Медиана (50-й перцентиль):", percentiles[1])
+print("75-й перцентиль:", percentiles[2])
